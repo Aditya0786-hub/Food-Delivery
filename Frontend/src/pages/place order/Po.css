@@ -1,0 +1,93 @@
+/* General Styles */
+  .place-order {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+  }
+  
+  .place-order-left {
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: max(30%, 500px);
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Fields */
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease;
+    font-size: 14px;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+  }
+  
+  /* Multi-field Row */
+  .multi-fields {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .multi-fields input[type="text"] {
+    flex: 1;
+  }
+  
+  /* Button Styling */
+  button.place-order-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #4a90e2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.place-order-btn:hover {
+    background-color: #357ABD;
+  }
+  
+  @media (max-width: 600px) {
+    .place-order {
+        display: flex;
+        flex-direction: column;
+    }
+    .place-order-left {
+      width: 90%;
+      padding: 20px;
+      
+    }
+  
+    .multi-fields {
+      flex-direction: column;
+    }
+  
+    .multi-fields input[type="text"] {
+      width: 100%;
+    }
+  }
+  
+  
+  
